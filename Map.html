@@ -1,0 +1,34 @@
+<html>
+<head>
+
+</head>
+<body>
+<button onclick="assending()">
+Assending    
+</button>
+<button onclick="dessending()">
+Dessending
+</button>
+<h1 id="result"></h1>
+<h1 id="ns"></h1>
+<script>
+    var points=[120,40000,1000,200,450,669,142]
+    function assending(){
+        points.sort(function(a, b){return a - b});
+        document.getElementById("result").innerHTML = points;
+    }
+    function dessending(){
+        points.sort(function(a, b){return b - a});
+        document.getElementById("result").innerHTML = points;
+    }
+    var score =[120,1343243,235347,12345678900987654321]
+    function product(num){
+               return num*10 
+                 
+    }
+    var array= score.map(product)
+    document.getElementById("ns").innerHTML=array
+</script>
+
+</body>
+</html>
