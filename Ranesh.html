@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+<h1 id="pen"></h1>
+<h1 id="pan"></h1>
+<h1 id="2025"></h1>
+<h1 id="Happy_New_Year"></h1>
+<h1 id="happy"></h1>
+<h1 id="new"></h1>
+<h1 id="year"></h1>
+<script>
+var a= 30
+var b= 40
+document.getElementById("pen").innerHTML= a+b
+ 
+var c= 400
+var d=500
+document.getElementById("pan").innerHTML= String(c)+String(d)
+
+try{
+    Univeres("Welcome to the world of 2025")
+}
+catch(error){
+    document.getElementById("2025").innerHTML= error.message
+}
+
+anesh=(a,b)=>(a+b)
+document.getElementById("Happy_New_Year").innerHTML= anesh (50,60)
+
+HAPPY=(c,d)=>(c-d)
+document.getElementById("happy").innerHTML= HAPPY (40,10)
+
+NEW=(e,f)=>(e*f)
+document.getElementById("new").innerHTML= NEW (80,100000) 
+
+YEAR=(g,h)=>(g/h)
+document.getElementById("year").innerHTML= YEAR(3000000000,60)
+
+</script>
+</body>
+</html>
